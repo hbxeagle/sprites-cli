@@ -1,7 +1,7 @@
 {
   "name": "sprites-cli",
   "description": "A command-line interface for css sprites",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "dist/sprites-cli.js",
   "bin": {
     "sprt": "bin/command"
