@@ -12,20 +12,21 @@ export default (options)=> {
   let files = options.files || './*.{png,jpg,jpeg,gif}';
   let dist = options.dist || './build';
   let algorithm = options.algorithm || 'binary-tree';
-  
+
   console.log(files);
 
   let args = {
     imgName: 'icons.png',
     cssName: 'icons.css',
-    algorithm: algorithm
+    algorithm: algorithm,
+    algorithmOpts: { sort: false }
   };
 
   if(options.rem) {
     args.cssTemplate =  path.join(__dirname, '../handlebars/rem.handlebars');
     args.cssHandlebarsHelpers = {
       percent: function(offset, length, total) {
-        let p = (length - total) !== 0 ? offset / (length - total) * 100 : 0; 
+        let p = (length - total) !== 0 ? offset / (length - total) * 100 : 0;
         return p;
       },
       px2rem: function(length) {
