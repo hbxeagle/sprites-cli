@@ -23,7 +23,8 @@ exports.default = function (options) {
   var args = {
     imgName: 'icons.png',
     cssName: 'icons.css',
-    algorithm: algorithm
+    algorithm: algorithm,
+    algorithmOpts: { sort: false }
   };
 
   if (options.rem) {
