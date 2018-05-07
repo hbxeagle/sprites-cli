@@ -47,3 +47,8 @@ sprite pngs in src/icons
     -f, --files [value]      images, using minimatch rules
     -d, --dist [value]       dest dir
 ```
+
+**Update**
+
+* 0.1.1 disable spritesmith’s own sort, to be consistent with the input order.
+
